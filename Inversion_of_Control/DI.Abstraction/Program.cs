@@ -11,9 +11,8 @@ namespace DI.Abstraction
     {
         static void Main(string[] args)
         {
-            OrderInfo order = new OrderInfo();
-            Commerce commerce = new Commerce(new BillingProcessor(), new AirShipment(), new EmailNotification(), new FileLogger());
-            commerce.ProcessOrder(order);
+            Commerce commerce = new Commerce(new BillingProcessor(new TaxCalculator(new Dependencies.Math())), new AirShipment(), new EmailNotification(), new FileLogger());
+            commerce.ProcessOrder(new OrderInfo());
             Console.ReadKey();
         }
     }

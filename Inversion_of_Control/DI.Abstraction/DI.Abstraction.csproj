@@ -63,10 +63,14 @@
     <Compile Include="Dependencies\BillingProcessor.cs" />
     <Compile Include="Dependencies\EmailNotification.cs" />
     <Compile Include="Dependencies\FileLogger.cs" />
+    <Compile Include="Dependencies\Math.cs" />
+    <Compile Include="Dependencies\TaxCalculator.cs" />
     <Compile Include="Dependency.Interfaces\IBillingProcessor.cs" />
     <Compile Include="Dependency.Interfaces\IDelivery.cs" />
     <Compile Include="Dependency.Interfaces\ILogger.cs" />
+    <Compile Include="Dependency.Interfaces\IMath.cs" />
     <Compile Include="Dependency.Interfaces\INotifier.cs" />
+    <Compile Include="Dependency.Interfaces\ITaxCalculator.cs" />
     <Compile Include="OrderInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
