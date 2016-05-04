@@ -1,5 +1,8 @@
+D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Abstraction\obj\Debug\DI.Abstraction.csprojResolveAssemblyReference.cache
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Abstraction\bin\Debug\DI.Abstraction.exe.config
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Abstraction\bin\Debug\DI.Abstraction.exe
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Abstraction\bin\Debug\DI.Abstraction.pdb
+D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Abstraction\bin\Debug\Ninject.dll
+D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Abstraction\bin\Debug\Ninject.xml
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Abstraction\obj\Debug\DI.Abstraction.exe
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Abstraction\obj\Debug\DI.Abstraction.pdb

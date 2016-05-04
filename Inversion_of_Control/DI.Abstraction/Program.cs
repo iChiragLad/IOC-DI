@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DI.Abstraction.Dependencies;
+using Ninject;
 
 namespace DI.Abstraction
 {
@@ -11,7 +12,9 @@ namespace DI.Abstraction
     {
         static void Main(string[] args)
         {
-            Commerce commerce = new Commerce(new BillingProcessor(new TaxCalculator(new Dependencies.Math())), new AirShipment(), new EmailNotification(), new FileLogger());
+            //Commerce commerce = new Commerce(new BillingProcessor(new TaxCalculator(new Dependencies.Math())), new AirShipment(), new EmailNotification(), new FileLogger());
+            IKernel kernel = new StandardKernel(new Registration());
+            Commerce commerce = kernel.Get<Commerce>();
             commerce.ProcessOrder(new OrderInfo());
             Console.ReadKey();
         }
