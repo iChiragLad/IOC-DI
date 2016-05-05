@@ -11,11 +11,22 @@ namespace DI.Abstraction
 {
     class Registration : NinjectModule
     {
+        readonly bool _mode;
+        public Registration(bool mode)
+        {
+            _mode = mode;
+        }
         public override void Load()
         {
             Bind<IBillingProcessor>().To<BillingProcessor>();
-            Bind<IDelivery>().To<AirShipment>().WhenTargetHas(typeof(AirAttribute));
-            Bind<IDelivery>().To<RailShipment>().WhenTargetHas(typeof(RailAttribute));
+            if(_mode)
+            {
+                Bind<IDelivery>().To<AirShipment>();
+            }
+            else
+            {
+                Bind<IDelivery>().To<RailShipment>();
+            }
             Bind<ILogger>().To<FileLogger>();
             Bind<INotifier>().To<EmailNotification>();
             Bind<ITaxCalculator>().To<TaxCalculator>();
