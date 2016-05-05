@@ -14,7 +14,8 @@ namespace DI.Abstraction
         public override void Load()
         {
             Bind<IBillingProcessor>().To<BillingProcessor>();
-            Bind<IDelivery>().To<AirShipment>();
+            Bind<IDelivery>().To<AirShipment>().Named("Air");
+            Bind<IDelivery>().To<RailShipment>().Named("Rail");
             Bind<ILogger>().To<FileLogger>();
             Bind<INotifier>().To<EmailNotification>();
             Bind<ITaxCalculator>().To<TaxCalculator>();

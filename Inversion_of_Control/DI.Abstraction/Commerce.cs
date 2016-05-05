@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DI.Abstraction.Dependency.Interfaces;
 using DI.Abstraction.Dependencies;
-
+using Ninject;
 namespace DI.Abstraction
 {
     class Commerce
@@ -15,14 +15,20 @@ namespace DI.Abstraction
         INotifier _emailNotification;
         ILogger _fileLogger;
 
-        public Commerce(IBillingProcessor billingProcessor, IDelivery airShipment, INotifier emailNotification, ILogger fileLogger)
+        public Commerce(IBillingProcessor billingProcessor,[Named("Air")] IDelivery modeShipment, INotifier emailNotification, ILogger fileLogger)
         {
             _billingProcessor = billingProcessor;
-            _airShipment = airShipment;
+            _airShipment = modeShipment;
             _emailNotification = emailNotification;
             _fileLogger = fileLogger;
         }
 
+        public Commerce()
+        {
+            Console.WriteLine("Public Constructor called");
+        }
+
+        
         public void ProcessOrder(OrderInfo orderInfo)
         {
             _billingProcessor.ProcessPayment(orderInfo.CustomerName, orderInfo.CreditCardInfo, orderInfo.ProductPrice);

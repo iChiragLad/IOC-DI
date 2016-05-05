@@ -68,6 +68,7 @@
     <Compile Include="Dependencies\EmailNotification.cs" />
     <Compile Include="Dependencies\FileLogger.cs" />
     <Compile Include="Dependencies\Math.cs" />
+    <Compile Include="Dependencies\RailShipment.cs" />
     <Compile Include="Dependencies\TaxCalculator.cs" />
     <Compile Include="Dependency.Interfaces\IBillingProcessor.cs" />
     <Compile Include="Dependency.Interfaces\IDelivery.cs" />
