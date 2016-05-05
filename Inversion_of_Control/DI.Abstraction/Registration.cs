@@ -16,8 +16,8 @@ namespace DI.Abstraction
             Bind<IBillingProcessor>().To<BillingProcessor>();
             Bind<IDelivery>().To<AirShipment>().WhenTargetHas(typeof(AirAttribute));
             Bind<IDelivery>().To<RailShipment>().WhenTargetHas(typeof(RailAttribute));
-            Bind<ILogger>().To<FileLogger>().InTransientScope();
-            Bind<INotifier>().To<EmailNotification>().InThreadScope();
+            Bind<ILogger>().To<FileLogger>();
+            Bind<INotifier>().To<EmailNotification>();
             Bind<ITaxCalculator>().To<TaxCalculator>();
             Bind<IMath>().To<Dependencies.Math>();
             Bind<Commerce>().ToSelf().WithConstructorArgument("x", 10).WithConstructorArgument("y", "Hello World");
