@@ -10,26 +10,26 @@ namespace DI.Abstraction
 {
     class Commerce
     {
-        IBillingProcessor _billingProcessor;
-        IDelivery _airShipment;
-        INotifier _emailNotification;
-        ILogger _fileLogger;
+        //IBillingProcessor _billingProcessor;
+        //IDelivery _airShipment;
+        //INotifier _emailNotification;
+        //ILogger _fileLogger;
 
+        [Inject]
+        public IBillingProcessor _billingProcessor { private get; set; }
+        [Inject, Named("Air")]
+        public IDelivery _airShipment { private get; set; }
+        [Inject]
+        public INotifier _emailNotification { private get; set; }
+        [Inject]
+        public ILogger _fileLogger { private get; set; }
+
+        
         public Commerce()
         {
             Console.WriteLine("Public Constructor called");
         }
-
-        [Inject]
-        public void Accept(IBillingProcessor billingProcessor, [Named("Air")] IDelivery modeShipment, INotifier emailNotification, ILogger fileLogger)
-        {
-            _billingProcessor = billingProcessor;
-            _airShipment = modeShipment;
-            _emailNotification = emailNotification;
-            _fileLogger = fileLogger;
-            Console.WriteLine("Method called");
-        }
-
+        
         public void ProcessOrder(OrderInfo orderInfo)
         {
             _billingProcessor.ProcessPayment(orderInfo.CustomerName, orderInfo.CreditCardInfo, orderInfo.ProductPrice);
