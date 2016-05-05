@@ -20,7 +20,7 @@ namespace DI.Abstraction
             Bind<INotifier>().To<EmailNotification>();
             Bind<ITaxCalculator>().To<TaxCalculator>();
             Bind<IMath>().To<Dependencies.Math>();
-            Bind<Commerce>().ToSelf();
+            Bind<Commerce>().ToSelf().WithConstructorArgument("x", 10).WithConstructorArgument("y", "Hello World");
         }
     }
 }
