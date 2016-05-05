@@ -15,20 +15,21 @@ namespace DI.Abstraction
         INotifier _emailNotification;
         ILogger _fileLogger;
 
-        public Commerce(IBillingProcessor billingProcessor,[Named("Air")] IDelivery modeShipment, INotifier emailNotification, ILogger fileLogger)
-        {
-            _billingProcessor = billingProcessor;
-            _airShipment = modeShipment;
-            _emailNotification = emailNotification;
-            _fileLogger = fileLogger;
-        }
-
         public Commerce()
         {
             Console.WriteLine("Public Constructor called");
         }
 
-        
+        [Inject]
+        public void Accept(IBillingProcessor billingProcessor, [Named("Air")] IDelivery modeShipment, INotifier emailNotification, ILogger fileLogger)
+        {
+            _billingProcessor = billingProcessor;
+            _airShipment = modeShipment;
+            _emailNotification = emailNotification;
+            _fileLogger = fileLogger;
+            Console.WriteLine("Method called");
+        }
+
         public void ProcessOrder(OrderInfo orderInfo)
         {
             _billingProcessor.ProcessPayment(orderInfo.CustomerName, orderInfo.CreditCardInfo, orderInfo.ProductPrice);
