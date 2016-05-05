@@ -17,7 +17,7 @@ namespace DI.Abstraction
         int x;
         string y;
 
-        public Commerce(IBillingProcessor billingProcessor, int x, [Named("Air")] IDelivery modeShipment, INotifier emailNotification, ILogger fileLogger, string y)
+        public Commerce(IBillingProcessor billingProcessor, int x, [RailAttribute] IDelivery modeShipment, INotifier emailNotification, ILogger fileLogger, string y)
         {
             _billingProcessor = billingProcessor;
             _modeShipment = modeShipment;
