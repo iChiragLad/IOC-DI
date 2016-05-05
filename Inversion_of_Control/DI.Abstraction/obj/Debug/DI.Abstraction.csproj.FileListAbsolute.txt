@@ -5,3 +5,10 @@ D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Co
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Abstraction\bin\Debug\Ninject.xml
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Abstraction\obj\Debug\DI.Abstraction.exe
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Abstraction\obj\Debug\DI.Abstraction.pdb
+D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Abstraction\bin\Debug\DI.Abstraction.exe.config
+D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Abstraction\bin\Debug\DI.Abstraction.exe
+D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Abstraction\bin\Debug\DI.Abstraction.pdb
+D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Abstraction\bin\Debug\Ninject.dll
+D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Abstraction\bin\Debug\Ninject.xml
+D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Abstraction\obj\Debug\DI.Abstraction.exe
+D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Abstraction\obj\Debug\DI.Abstraction.pdb
