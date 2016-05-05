@@ -11,13 +11,13 @@ namespace DI.Abstraction
     class Commerce
     {
         IBillingProcessor _billingProcessor;
-        IDelivery[] _modeShipment;
+        IDelivery _modeShipment;
         INotifier _emailNotification;
         ILogger _fileLogger;
         int x;
         string y;
 
-        public Commerce(IBillingProcessor billingProcessor, int x, IDelivery[] modeShipment, INotifier emailNotification, ILogger fileLogger, string y)
+        public Commerce(IBillingProcessor billingProcessor, int x, [Named("Air")] IDelivery modeShipment, INotifier emailNotification, ILogger fileLogger, string y)
         {
             _billingProcessor = billingProcessor;
             _modeShipment = modeShipment;
@@ -37,11 +37,7 @@ namespace DI.Abstraction
         {
             _billingProcessor.ProcessPayment(orderInfo.CustomerName, orderInfo.CreditCardInfo, orderInfo.ProductPrice);
             _fileLogger.Log("Bill processed");
-            foreach(IDelivery d in _modeShipment)
-            {
-                d.DeliverProduct(orderInfo.ProductName, orderInfo.CustomerAddress);
-                Console.WriteLine(d.GetType().FullName);
-            }
+            _modeShipment.DeliverProduct(orderInfo.ProductName, orderInfo.CustomerAddress);
             _fileLogger.Log("Product Shipped");
             _emailNotification.SendNotification(orderInfo);
             _fileLogger.Log("Email Send");
