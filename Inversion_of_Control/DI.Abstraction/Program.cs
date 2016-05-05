@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DI.Abstraction.Dependencies;
 using Ninject;
 using DI.Abstraction.Dependency.Interfaces;
+using System.Reflection;
 
 namespace DI.Abstraction
 {
@@ -15,7 +16,8 @@ namespace DI.Abstraction
         static void Main(string[] args)
         {
             //Commerce commerce = new Commerce(new BillingProcessor(new TaxCalculator(new Dependencies.Math())), new AirShipment(), new EmailNotification(), new FileLogger());
-            IKernel kernel = new StandardKernel(new Registration(true));
+            IKernel kernel = new StandardKernel();
+            kernel.Load(Assembly.GetExecutingAssembly());
             Commerce commerce = kernel.Get<Commerce>();
             commerce.ProcessOrder(new OrderInfo());
             Console.ReadKey();
