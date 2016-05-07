@@ -3,14 +3,14 @@ D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Co
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DependencyInjection\bin\Debug\DI.Coupled.pdb
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DependencyInjection\obj\Debug\DI.Coupled.exe
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DependencyInjection\obj\Debug\DI.Coupled.pdb
+D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Coupled\bin\Debug\DI.Coupled.exe.config
+D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Coupled\bin\Debug\DI.Coupled.exe
+D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Coupled\bin\Debug\DI.Coupled.pdb
+D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Coupled\obj\Debug\DI.Coupled.exe
+D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Coupled\obj\Debug\DI.Coupled.pdb
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Coupled\bin\Debug\DI.Coupled.exe.config
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Coupled\bin\Debug\DI.Coupled.exe
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Coupled\bin\Debug\DI.Coupled.pdb
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Coupled\obj\Debug\DI.Coupled.csprojResolveAssemblyReference.cache
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Coupled\obj\Debug\DI.Coupled.exe
 D:\Do not touch\C# practice\CSharp_Practice\Dependency Injection\Inversion_of_Control\DI.Coupled\obj\Debug\DI.Coupled.pdb
-D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Coupled\bin\Debug\DI.Coupled.exe.config
-D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Coupled\bin\Debug\DI.Coupled.exe
-D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Coupled\bin\Debug\DI.Coupled.pdb
-D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Coupled\obj\Debug\DI.Coupled.exe
-D:\TestProjects\Dependency Injection\IOC-DI\Inversion_of_Control\DI.Coupled\obj\Debug\DI.Coupled.pdb
